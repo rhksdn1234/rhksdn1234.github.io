@@ -1,8 +1,8 @@
 +++
-title = "Rocky Linux 가상서버에서 GitHub 연결하기 (설치부터 push까지)"
+title = "Rocky Linux와 Ubuntu에서 GitHub 연결하기 (설치부터 push까지)"
 date = 2026-06-08
 draft = false
-tags = ["Git", "GitHub", "Rocky Linux", "Linux"]
+tags = ["Git", "GitHub", "Rocky Linux", "Ubuntu", "Linux"]
 categories = ["DevOps"]
 +++
 
@@ -22,13 +22,30 @@ Rocky Linux 가상서버에서 작업한 내용을 GitHub로 올리려면 단순
 
 ## 1. Git 설치
 
-Rocky Linux는 RHEL 계열이라 패키지 관리자로 `dnf`를 사용한다. 다음 명령으로 Git을 설치한다.
+Git 설치 명령은 리눅스 배포판 계열에 따라 다르다. 사용하는 OS에 맞는 방법을 따르면 된다.
+
+### Rocky Linux / CentOS / RHEL 계열
+
+RHEL 계열은 패키지 관리자로 `dnf`를 사용한다. (구버전에서는 `yum`)
 
 ​```bash
 sudo dnf install git -y
 ​```
 
-설치가 끝나면 버전을 확인해 정상 설치 여부를 점검한다.
+### Ubuntu / Debian 계열
+
+Ubuntu는 `apt`를 사용한다. 설치 전에 패키지 목록을 먼저 갱신하는 것이 좋다.
+
+​```bash
+sudo apt update
+sudo apt install git -y
+​```
+
+> `apt update`는 패키지를 설치하는 명령이 아니라, 설치 가능한 패키지 목록을 최신으로 갱신하는 명령이다. 이 과정을 건너뛰면 오래된 정보로 인해 설치가 실패하거나 구버전이 깔릴 수 있어, 습관적으로 먼저 실행해두는 편이 좋다.
+
+### 설치 확인 (공통)
+
+어느 배포판이든 설치 후에는 버전을 확인해 정상 설치 여부를 점검한다.
 
 ​```bash
 git --version
