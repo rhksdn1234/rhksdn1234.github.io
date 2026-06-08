@@ -22,3 +22,18 @@ theme = "PaperMod"
     name = "Tags"
     url = "/tags/"
     weight = 40
+
+[params.profileMode]
+  enabled = true
+  title = "Tech Blog"
+  subtitle = "Backup Solution Engineer @ Intek & Company"
+  imageUrl = "https://github.com/rhksdn1234.png"
+  imageWidth = 150
+  imageHeight = 150
+
+  [[params.profileMode.buttons]]
+    name = "Archive"
+    url = "/archive/"
+  [[params.profileMode.buttons]]
+    name = "Github"
+    url = "https://github.com/rhksdn1234"
