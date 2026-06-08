@@ -2,3 +2,23 @@
 languageCode = "ko-kr"
 title = "rhksdn1234 blog"
 theme = "PaperMod"         
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    name = "Archive"
+    url = "/archive/"
+    weight = 20
+  [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 30
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 40
