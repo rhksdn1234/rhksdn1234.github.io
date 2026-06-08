@@ -1,0 +1,4 @@
+ baseURL = "https://rhksdn1234.github.io/"
+languageCode = "ko-kr"
+title = "rhksdn1234 blog"
+theme = "PaperMod"         
