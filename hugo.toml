@@ -26,7 +26,7 @@ theme = "PaperMod"
 [params.profileMode]
   enabled = true
   title = "Tech Blog"
-  subtitle = "Backup Solution Engineer @ Intek & Company"
+  subtitle = "IT Engineer @ gwanwoo"
   imageUrl = "https://github.com/rhksdn1234.png"
   imageWidth = 150
   imageHeight = 150
